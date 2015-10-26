@@ -13,8 +13,7 @@ module Zadarma
 
         params.merge!(format: "json")
 
-        response = client.send(method, "/v1" + path) do |request|
-          request.params = params
+        response = client.send(method, "/v1" + path, params) do |request|
           request.headers["Accept"] = "application/json"
           request.headers["Authorization"] = "#{Zadarma.api_key}:#{signature("/v1" + path, params)}"
         end

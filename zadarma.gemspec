@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = "zadarma"
-  s.version       = "0.0.1"
+  s.version       = "0.0.2"
   s.date          = "2015-10-07"
   s.summary       = "zadarma.com api ruby interface"
   s.description   = ""
@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage      = "https://github.com/zhekanax/zadarma-ruby"
   s.license       = "MIT"
 
+  s.required_ruby_version = '>= 1.9.3'
 
   s.add_dependency "json"
   s.add_dependency "faraday"
