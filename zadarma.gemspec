@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = "zadarma"
-  s.version       = "0.0.2"
+  s.version       = "0.0.3"
   s.date          = "2015-10-07"
   s.summary       = "zadarma.com api ruby interface"
   s.description   = ""
