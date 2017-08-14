@@ -21,7 +21,12 @@ Or install it yourself as:
     Zadarma.log_requests = false # default
 
     Zadarma::Client.balance
-
+or
+    
+    client = Zadarma::Client.new("YOUR_API_KEY", "YOUR_API_SECRET")
+    client.balance
+    
+    
 ## Available methods:
 
 * `balance` - user balance
