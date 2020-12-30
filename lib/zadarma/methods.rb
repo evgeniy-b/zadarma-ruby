@@ -56,6 +56,10 @@ module Zadarma
       request :get, "/statistics/pbx/", start: time_s(time_start), end: time_s(time_end)
     end
 
+    def numbers
+      request :get, "/direct_numbers/"
+    end
+
 
     protected
 
