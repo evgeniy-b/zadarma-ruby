@@ -41,6 +41,12 @@ or
 * `send_sms(number, message, params = {})` - send sms
 * `statistics(date_start, date_end, params = {})` - get stats
 * `pbx_statistics(date_start, date_end)` - get PBX stats
+* `direct_numbers` - get direct numbers
+* `documents_groups_list` - get document groups
+* `direct_numbers_available(direction_id)` - get direct numbers available for purchase
+* `direct_numbers_countries` - get countries where numbers are available
+* `direct_numbers_country(country_code)` - get numbers within a given country
+* `direct_numbers_order(number_id, period, direction_id, documents_group_id, purpose, receive_sms, user_id)` - purchase a number
 
 ## Contributing
 
