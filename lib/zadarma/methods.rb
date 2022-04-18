@@ -56,10 +56,31 @@ module Zadarma
       request :get, "/statistics/pbx/", start: time_s(time_start), end: time_s(time_end)
     end
 
-    def numbers
+    def direct_numbers
       request :get, "/direct_numbers/"
     end
 
+    def documents_groups_list
+      request :get, "/documents/groups/list/"
+    end
+
+    def direct_numbers_available(direction_id)
+      request :get, "/direct_numbers/available/#{direction_id}/"
+    end
+
+    def direct_numbers_countries
+      request :get, "/direct_numbers/countries"
+    end
+
+    def direct_numbers_country(country_code)
+      request :get, "/direct_numbers/country", country: country_code
+    end
+
+    def direct_numbers_order(number_id, period=nil, direction_id=nil, documents_group_id=nil, purpose=nil, receive_sms=nil, user_id=nil)
+      params = {number_id: number_id, period: period, direction_id: direction_id, documents_group_id: documents_group_id, purpose: purpose, receive_sms: receive_sms}
+      params[:user_id] = user_id if !user_id.nil?
+      request :post, "/direct_numbers/order", params
+    end
 
     protected
 
