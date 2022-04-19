@@ -1,5 +1,9 @@
 # Zadarma API
 
+This repo is archived. The development has moved to https://github.com/DGaffney/zadarma-ruby
+
+---
+
 ## Installation
 
 Add this line to your application's Gemfile:
